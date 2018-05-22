@@ -78,11 +78,10 @@ Vagrant.configure("2") do |config|
   #git clone https://github.com/edsonbenites/devops-sample-vestibulares.git /var/www/devops-sample-vestibulares
   #git clone https://github.com/edsonbenites/html-docs-hello-world.git /var/www/html-docs-hello-world
   #git clone https://github.com/edsonbenites/devops-aula13.git /var/www/devops-aula13
-  git clone https://github.com/hugodias360/introducao-html-css.git /var/www/introducao-html-css
-  # git clone https://github.com/edsonbenites/Apache2-vagrant.git /etc/apache2/sites-enable
-  # git clone https://github.com/mattdesl/simple-html-index.git /var/www/simple-html-index
+  rm -rf /var/www/introducao-html-css
+  git clone https://github.com/notrevefreitas/introducao-html-css.git /var/www/introducao-html-css
   rm /etc/apache2/sites-enabled/000-default.conf
-  git clone https://github.com/hugodias360/Apache2-vagrant.git /etc/apache2/sites-enabled
+  git clone https://github.com/notrevefreitas/Apache2-vagrant.git /etc/apache2/sites-enabled
   service apache2 restart 
 
   SHELL
